@@ -34,6 +34,7 @@ To-Do
 
 * Unit tests
 * Refactor URLs into node attributes
+* Unix/Linux support?
 
 License and Authors
 -------------------
