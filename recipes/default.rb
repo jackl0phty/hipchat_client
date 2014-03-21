@@ -17,14 +17,14 @@
 # limitations under the License.
 #
 
-case node['platform_family'] 
+case node['platform_family']
   when 'mac_os_x'
     include_recipe 'hipchat_client::_mac_os_x'
   when 'windows'
     include_recipe 'hipchat_client::_windows'
 end
 
-case node['host_os']
-  when 'linux-gnu'
+case node['kernel']['name']
+  when 'Linux'
     include_recipe 'hipchat_client::linux'
 end
