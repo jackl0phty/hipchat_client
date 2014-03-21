@@ -30,12 +30,10 @@ case node['platform_family']
     cwd "/tmp"
     code <<-EOH
     echo "deb http://downloads.hipchat.com/linux/apt stable main" > /etc/apt/sources.list.d/atlassian-hipchat.list
-    /etc/apt/sources.list.d/atlassian-hipchat.list
     wget -O - https://www.hipchat.com/keys/hipchat-linux.key | apt-key add -
     apt-get update
-    apt-get hipchat
+    apt-get install hipchat
     EOH
-    not_if 'cat /etc/apt/sources.list.d/atlassian-hipchat.list |grep hipchat'
     not_if 'which hipchat'
   end
 
