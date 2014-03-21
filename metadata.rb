@@ -4,10 +4,12 @@ maintainer_email 'jdunn@aquezada.com'
 license          'Apache 2.0'
 description      'Installs Atlassian HipChat client'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '1.0.0'
+version          '1.0.1'
 
-%w{mac_os_x windows}.each do |os|
+%w{mac_os_x windows ubuntu kubuntu mint debian}.each do |os|
   supports os
 end
 
-depends 'windows'
+%w{windows unix_shells}.each do |ckbk|
+ depends ckbk
+end
