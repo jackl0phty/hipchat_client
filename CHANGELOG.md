@@ -3,6 +3,11 @@ hipchat_client CHANGELOG
 
 This file is used to list changes made in each version of the hipchat_client cookbook.
 
+1.0.7
+-----
+- Remove Berksfile.lock.
+- First working version passing initial test-kitchen tests for hipchat_client::linux.
+
 1.0.6
 -----
 - Add -y to apt-get install command.
