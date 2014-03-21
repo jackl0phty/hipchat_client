@@ -1,0 +1,18 @@
+{
+  "sources": {
+    "hipchat_client": {
+      "locked_version": "1.0.5",
+      "git": "git@github.com:jackl0phty/hipchat_client.git",
+      "ref": "b8778f36c40e07354e4166d0f7ac41dbd5556215"
+    },
+    "unix_shells": {
+      "locked_version": "0.2.4"
+    },
+    "windows": {
+      "locked_version": "1.10.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    }
+  }
+}

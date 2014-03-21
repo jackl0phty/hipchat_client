@@ -3,9 +3,13 @@ hipchat_client CHANGELOG
 
 This file is used to list changes made in each version of the hipchat_client cookbook.
 
+1.0.6
+-----
+- Add -y to apt-get install command.
+- Add Initial test-kitchen coverage.
+
 1.0.4
 -----
-- Update CHANGELOG.
 - Update case statement to include hipchat_client::linux recipe.
 
 1.0.3
