@@ -25,11 +25,11 @@ case node['platform_family']
 
   # Install Hipchat client for Debian-based distros.
   # Note: Officially supports Ubuntu, Kubuntu, Mint, & Debian.
-  bash "install_something" do
+  bash "Installing Hipchat client for Linux..." do
     user "root"
     cwd "/tmp"
     code <<-EOH
-    echo "deb http://downloads.hipchat.com/linux/apt stable main" > \
+    echo "deb http://downloads.hipchat.com/linux/apt stable main" > /etc/apt/sources.list.d/atlassian-hipchat.list
     /etc/apt/sources.list.d/atlassian-hipchat.list
     wget -O - https://www.hipchat.com/keys/hipchat-linux.key | apt-key add -
     apt-get update
