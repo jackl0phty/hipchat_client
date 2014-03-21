@@ -18,8 +18,13 @@
 #
 
 case node['platform_family'] 
-when 'mac_os_x'
-  include_recipe 'hipchat_client::_mac_os_x'
-when 'windows'
-  include_recipe 'hipchat_client::_windows'
+  when 'mac_os_x'
+    include_recipe 'hipchat_client::_mac_os_x'
+  when 'windows'
+    include_recipe 'hipchat_client::_windows'
+end
+
+case node['host_os']
+  when 'linux-gnu'
+    include_recipe 'hipchat_client::linux'
 end
